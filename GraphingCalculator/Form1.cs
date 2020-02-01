@@ -16,5 +16,20 @@ namespace GraphingCalculator
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
