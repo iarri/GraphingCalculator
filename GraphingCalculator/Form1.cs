@@ -202,8 +202,127 @@ namespace GraphingCalculator
                 textBox1.Text += "0";
 
             }
-            
 
         }
+
+        private void Button_ClickLetter(object sender, EventArgs e)
+        {
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: a")
+            {
+                textBox1.Text += 'a';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: b")
+            {
+                textBox1.Text += 'b';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: c")
+            {
+                textBox1.Text += 'c';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: d")
+            {
+                textBox1.Text += 'd';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: e")
+            {
+                textBox1.Text += 'e';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: f")
+            {
+                textBox1.Text += 'f';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: g")
+            {
+                textBox1.Text += 'g';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: h")
+            {
+                textBox1.Text += 'h';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: i")
+            {
+                textBox1.Text += 'i';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: j")
+            {
+                textBox1.Text += 'j';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: k")
+            {
+                textBox1.Text += 'k';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: l")
+            {
+                textBox1.Text += 'l';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: m")
+            {
+                textBox1.Text += 'm';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: n")
+            {
+                textBox1.Text += 'n';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: o")
+            {
+                textBox1.Text += 'o';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: p")
+            {
+                textBox1.Text += 'p';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: q")
+            {
+                textBox1.Text += 'q';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: r")
+            {
+                textBox1.Text += 'r';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: s")
+            {
+                textBox1.Text += 's';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: t")
+            {
+                textBox1.Text += 't';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: u")
+            {
+                textBox1.Text += 'u';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: v")
+            {
+                textBox1.Text += 'v';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: w")
+            {
+                textBox1.Text += 'w';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: x")
+            {
+                textBox1.Text += 'x';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: y")
+            {
+                textBox1.Text += 'y';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text: z")
+            {
+                textBox1.Text += 'z';
+            }
+            if (sender.ToString() == "System.Windows.Forms.Button, Text:  ")
+            {
+                textBox1.Text += ' ';
+            }
+
+        }
+
+
+
+
+
+
+
     }
 }

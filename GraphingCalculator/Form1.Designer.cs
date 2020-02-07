@@ -67,36 +67,36 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.Enter_Key = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
+            this.p_Key = new System.Windows.Forms.Button();
+            this.o_Key = new System.Windows.Forms.Button();
+            this.i_Key = new System.Windows.Forms.Button();
+            this.u_Key = new System.Windows.Forms.Button();
+            this.y_Key = new System.Windows.Forms.Button();
+            this.t_Key = new System.Windows.Forms.Button();
+            this.r_Key = new System.Windows.Forms.Button();
+            this.e_Key = new System.Windows.Forms.Button();
+            this.w_Key = new System.Windows.Forms.Button();
+            this.q_Key = new System.Windows.Forms.Button();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
+            this.l_Key = new System.Windows.Forms.Button();
+            this.k_Key = new System.Windows.Forms.Button();
+            this.j_Key = new System.Windows.Forms.Button();
+            this.h_Key = new System.Windows.Forms.Button();
+            this.g_Key = new System.Windows.Forms.Button();
+            this.f_Key = new System.Windows.Forms.Button();
+            this.d_Key = new System.Windows.Forms.Button();
+            this.a_Key = new System.Windows.Forms.Button();
+            this.s_Key = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
+            this.m_Key = new System.Windows.Forms.Button();
+            this.n_Key = new System.Windows.Forms.Button();
+            this.b_Key = new System.Windows.Forms.Button();
+            this.v_Key = new System.Windows.Forms.Button();
+            this.c_Key = new System.Windows.Forms.Button();
+            this.x_Key = new System.Windows.Forms.Button();
+            this.z_Key = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.button58 = new System.Windows.Forms.Button();
+            this.space_Key = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -550,16 +550,16 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel6.Controls.Add(this.button41, 9, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button40, 8, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button39, 7, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button38, 6, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button37, 5, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button36, 4, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button35, 3, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button34, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button33, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button32, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.p_Key, 9, 0);
+            this.tableLayoutPanel6.Controls.Add(this.o_Key, 8, 0);
+            this.tableLayoutPanel6.Controls.Add(this.i_Key, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.u_Key, 6, 0);
+            this.tableLayoutPanel6.Controls.Add(this.y_Key, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.t_Key, 4, 0);
+            this.tableLayoutPanel6.Controls.Add(this.r_Key, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.e_Key, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.w_Key, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.q_Key, 0, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(26, 560);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
@@ -576,95 +576,105 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(272, 27);
             this.tableLayoutPanel6.TabIndex = 10;
             // 
-            // button41
+            // p_Key
             // 
-            this.button41.Location = new System.Drawing.Point(246, 3);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(20, 20);
-            this.button41.TabIndex = 9;
-            this.button41.Text = "p";
-            this.button41.UseVisualStyleBackColor = true;
+            this.p_Key.Location = new System.Drawing.Point(246, 3);
+            this.p_Key.Name = "p_Key";
+            this.p_Key.Size = new System.Drawing.Size(20, 20);
+            this.p_Key.TabIndex = 9;
+            this.p_Key.Text = "p";
+            this.p_Key.UseVisualStyleBackColor = true;
+            this.p_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button40
+            // o_Key
             // 
-            this.button40.Location = new System.Drawing.Point(219, 3);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(20, 20);
-            this.button40.TabIndex = 8;
-            this.button40.Text = "o";
-            this.button40.UseVisualStyleBackColor = true;
+            this.o_Key.Location = new System.Drawing.Point(219, 3);
+            this.o_Key.Name = "o_Key";
+            this.o_Key.Size = new System.Drawing.Size(20, 20);
+            this.o_Key.TabIndex = 8;
+            this.o_Key.Text = "o";
+            this.o_Key.UseVisualStyleBackColor = true;
+            this.o_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button39
+            // i_Key
             // 
-            this.button39.Location = new System.Drawing.Point(192, 3);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(20, 20);
-            this.button39.TabIndex = 7;
-            this.button39.Text = "i";
-            this.button39.UseVisualStyleBackColor = true;
+            this.i_Key.Location = new System.Drawing.Point(192, 3);
+            this.i_Key.Name = "i_Key";
+            this.i_Key.Size = new System.Drawing.Size(20, 20);
+            this.i_Key.TabIndex = 7;
+            this.i_Key.Text = "i";
+            this.i_Key.UseVisualStyleBackColor = true;
+            this.i_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button38
+            // u_Key
             // 
-            this.button38.Location = new System.Drawing.Point(165, 3);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(20, 20);
-            this.button38.TabIndex = 6;
-            this.button38.Text = "u";
-            this.button38.UseVisualStyleBackColor = true;
+            this.u_Key.Location = new System.Drawing.Point(165, 3);
+            this.u_Key.Name = "u_Key";
+            this.u_Key.Size = new System.Drawing.Size(20, 20);
+            this.u_Key.TabIndex = 6;
+            this.u_Key.Text = "u";
+            this.u_Key.UseVisualStyleBackColor = true;
+            this.u_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button37
+            // y_Key
             // 
-            this.button37.Location = new System.Drawing.Point(138, 3);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(20, 20);
-            this.button37.TabIndex = 5;
-            this.button37.Text = "y";
-            this.button37.UseVisualStyleBackColor = true;
+            this.y_Key.Location = new System.Drawing.Point(138, 3);
+            this.y_Key.Name = "y_Key";
+            this.y_Key.Size = new System.Drawing.Size(20, 20);
+            this.y_Key.TabIndex = 5;
+            this.y_Key.Text = "y";
+            this.y_Key.UseVisualStyleBackColor = true;
+            this.y_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button36
+            // t_Key
             // 
-            this.button36.Location = new System.Drawing.Point(111, 3);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(20, 20);
-            this.button36.TabIndex = 4;
-            this.button36.Text = "t";
-            this.button36.UseVisualStyleBackColor = true;
+            this.t_Key.Location = new System.Drawing.Point(111, 3);
+            this.t_Key.Name = "t_Key";
+            this.t_Key.Size = new System.Drawing.Size(20, 20);
+            this.t_Key.TabIndex = 4;
+            this.t_Key.Text = "t";
+            this.t_Key.UseVisualStyleBackColor = true;
+            this.t_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button35
+            // r_Key
             // 
-            this.button35.Location = new System.Drawing.Point(84, 3);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(20, 20);
-            this.button35.TabIndex = 3;
-            this.button35.Text = "r";
-            this.button35.UseVisualStyleBackColor = true;
+            this.r_Key.Location = new System.Drawing.Point(84, 3);
+            this.r_Key.Name = "r_Key";
+            this.r_Key.Size = new System.Drawing.Size(20, 20);
+            this.r_Key.TabIndex = 3;
+            this.r_Key.Text = "r";
+            this.r_Key.UseVisualStyleBackColor = true;
+            this.r_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button34
+            // e_Key
             // 
-            this.button34.Location = new System.Drawing.Point(57, 3);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(20, 20);
-            this.button34.TabIndex = 2;
-            this.button34.Text = "er";
-            this.button34.UseVisualStyleBackColor = true;
+            this.e_Key.Location = new System.Drawing.Point(57, 3);
+            this.e_Key.Name = "e_Key";
+            this.e_Key.Size = new System.Drawing.Size(20, 20);
+            this.e_Key.TabIndex = 2;
+            this.e_Key.Text = "er";
+            this.e_Key.UseVisualStyleBackColor = true;
+            this.e_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button33
+            // w_Key
             // 
-            this.button33.Location = new System.Drawing.Point(30, 3);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(20, 20);
-            this.button33.TabIndex = 1;
-            this.button33.Text = "w";
-            this.button33.UseVisualStyleBackColor = true;
+            this.w_Key.Location = new System.Drawing.Point(30, 3);
+            this.w_Key.Name = "w_Key";
+            this.w_Key.Size = new System.Drawing.Size(20, 20);
+            this.w_Key.TabIndex = 1;
+            this.w_Key.Text = "w";
+            this.w_Key.UseVisualStyleBackColor = true;
+            this.w_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button32
+            // q_Key
             // 
-            this.button32.Location = new System.Drawing.Point(3, 3);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(20, 20);
-            this.button32.TabIndex = 0;
-            this.button32.Text = "q";
-            this.button32.UseVisualStyleBackColor = true;
+            this.q_Key.Location = new System.Drawing.Point(3, 3);
+            this.q_Key.Name = "q_Key";
+            this.q_Key.Size = new System.Drawing.Size(20, 20);
+            this.q_Key.TabIndex = 0;
+            this.q_Key.Text = "q";
+            this.q_Key.UseVisualStyleBackColor = true;
+            this.q_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
             // tableLayoutPanel7
             // 
@@ -678,15 +688,15 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel7.Controls.Add(this.button50, 8, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button49, 7, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button48, 6, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button47, 5, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button46, 4, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button45, 3, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button44, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button42, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button43, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.l_Key, 8, 0);
+            this.tableLayoutPanel7.Controls.Add(this.k_Key, 7, 0);
+            this.tableLayoutPanel7.Controls.Add(this.j_Key, 6, 0);
+            this.tableLayoutPanel7.Controls.Add(this.h_Key, 5, 0);
+            this.tableLayoutPanel7.Controls.Add(this.g_Key, 4, 0);
+            this.tableLayoutPanel7.Controls.Add(this.f_Key, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.d_Key, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.a_Key, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.s_Key, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(37, 587);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
@@ -694,86 +704,95 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 27);
             this.tableLayoutPanel7.TabIndex = 11;
             // 
-            // button50
+            // l_Key
             // 
-            this.button50.Location = new System.Drawing.Point(219, 3);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(20, 20);
-            this.button50.TabIndex = 8;
-            this.button50.Text = "l";
-            this.button50.UseVisualStyleBackColor = true;
+            this.l_Key.Location = new System.Drawing.Point(219, 3);
+            this.l_Key.Name = "l_Key";
+            this.l_Key.Size = new System.Drawing.Size(20, 20);
+            this.l_Key.TabIndex = 8;
+            this.l_Key.Text = "l";
+            this.l_Key.UseVisualStyleBackColor = true;
+            this.l_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button49
+            // k_Key
             // 
-            this.button49.Location = new System.Drawing.Point(192, 3);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(20, 20);
-            this.button49.TabIndex = 7;
-            this.button49.Text = "k";
-            this.button49.UseVisualStyleBackColor = true;
+            this.k_Key.Location = new System.Drawing.Point(192, 3);
+            this.k_Key.Name = "k_Key";
+            this.k_Key.Size = new System.Drawing.Size(20, 20);
+            this.k_Key.TabIndex = 7;
+            this.k_Key.Text = "k";
+            this.k_Key.UseVisualStyleBackColor = true;
+            this.k_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button48
+            // j_Key
             // 
-            this.button48.Location = new System.Drawing.Point(165, 3);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(20, 20);
-            this.button48.TabIndex = 6;
-            this.button48.Text = "j";
-            this.button48.UseVisualStyleBackColor = true;
+            this.j_Key.Location = new System.Drawing.Point(165, 3);
+            this.j_Key.Name = "j_Key";
+            this.j_Key.Size = new System.Drawing.Size(20, 20);
+            this.j_Key.TabIndex = 6;
+            this.j_Key.Text = "j";
+            this.j_Key.UseVisualStyleBackColor = true;
+            this.j_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button47
+            // h_Key
             // 
-            this.button47.Location = new System.Drawing.Point(138, 3);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(20, 20);
-            this.button47.TabIndex = 5;
-            this.button47.Text = "h";
-            this.button47.UseVisualStyleBackColor = true;
+            this.h_Key.Location = new System.Drawing.Point(138, 3);
+            this.h_Key.Name = "h_Key";
+            this.h_Key.Size = new System.Drawing.Size(20, 20);
+            this.h_Key.TabIndex = 5;
+            this.h_Key.Text = "h";
+            this.h_Key.UseVisualStyleBackColor = true;
+            this.h_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button46
+            // g_Key
             // 
-            this.button46.Location = new System.Drawing.Point(111, 3);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(20, 20);
-            this.button46.TabIndex = 4;
-            this.button46.Text = "g";
-            this.button46.UseVisualStyleBackColor = true;
+            this.g_Key.Location = new System.Drawing.Point(111, 3);
+            this.g_Key.Name = "g_Key";
+            this.g_Key.Size = new System.Drawing.Size(20, 20);
+            this.g_Key.TabIndex = 4;
+            this.g_Key.Text = "g";
+            this.g_Key.UseVisualStyleBackColor = true;
+            this.g_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button45
+            // f_Key
             // 
-            this.button45.Location = new System.Drawing.Point(84, 3);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(20, 20);
-            this.button45.TabIndex = 3;
-            this.button45.Text = "f";
-            this.button45.UseVisualStyleBackColor = true;
+            this.f_Key.Location = new System.Drawing.Point(84, 3);
+            this.f_Key.Name = "f_Key";
+            this.f_Key.Size = new System.Drawing.Size(20, 20);
+            this.f_Key.TabIndex = 3;
+            this.f_Key.Text = "f";
+            this.f_Key.UseVisualStyleBackColor = true;
+            this.f_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button44
+            // d_Key
             // 
-            this.button44.Location = new System.Drawing.Point(57, 3);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(20, 20);
-            this.button44.TabIndex = 2;
-            this.button44.Text = "d";
-            this.button44.UseVisualStyleBackColor = true;
+            this.d_Key.Location = new System.Drawing.Point(57, 3);
+            this.d_Key.Name = "d_Key";
+            this.d_Key.Size = new System.Drawing.Size(20, 20);
+            this.d_Key.TabIndex = 2;
+            this.d_Key.Text = "d";
+            this.d_Key.UseVisualStyleBackColor = true;
+            this.d_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button42
+            // a_Key
             // 
-            this.button42.Location = new System.Drawing.Point(3, 3);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(20, 20);
-            this.button42.TabIndex = 0;
-            this.button42.Text = "a";
-            this.button42.UseVisualStyleBackColor = true;
+            this.a_Key.Location = new System.Drawing.Point(3, 3);
+            this.a_Key.Name = "a_Key";
+            this.a_Key.Size = new System.Drawing.Size(20, 20);
+            this.a_Key.TabIndex = 0;
+            this.a_Key.Text = "a";
+            this.a_Key.UseVisualStyleBackColor = true;
+            this.a_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button43
+            // s_Key
             // 
-            this.button43.Location = new System.Drawing.Point(30, 3);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(20, 20);
-            this.button43.TabIndex = 1;
-            this.button43.Text = "s";
-            this.button43.UseVisualStyleBackColor = true;
+            this.s_Key.Location = new System.Drawing.Point(30, 3);
+            this.s_Key.Name = "s_Key";
+            this.s_Key.Size = new System.Drawing.Size(20, 20);
+            this.s_Key.TabIndex = 1;
+            this.s_Key.Text = "s";
+            this.s_Key.UseVisualStyleBackColor = true;
+            this.s_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
             // tableLayoutPanel8
             // 
@@ -785,13 +804,13 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel8.Controls.Add(this.button57, 6, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button56, 5, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button55, 4, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button54, 3, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button53, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button52, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button51, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_Key, 6, 0);
+            this.tableLayoutPanel8.Controls.Add(this.n_Key, 5, 0);
+            this.tableLayoutPanel8.Controls.Add(this.b_Key, 4, 0);
+            this.tableLayoutPanel8.Controls.Add(this.v_Key, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.c_Key, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.x_Key, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.z_Key, 0, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(56, 614);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -800,74 +819,81 @@
             this.tableLayoutPanel8.TabIndex = 12;
             this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel8_Paint);
             // 
-            // button57
+            // m_Key
             // 
-            this.button57.Location = new System.Drawing.Point(165, 3);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(20, 20);
-            this.button57.TabIndex = 6;
-            this.button57.Text = "m";
-            this.button57.UseVisualStyleBackColor = true;
+            this.m_Key.Location = new System.Drawing.Point(165, 3);
+            this.m_Key.Name = "m_Key";
+            this.m_Key.Size = new System.Drawing.Size(20, 20);
+            this.m_Key.TabIndex = 6;
+            this.m_Key.Text = "m";
+            this.m_Key.UseVisualStyleBackColor = true;
+            this.m_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button56
+            // n_Key
             // 
-            this.button56.Location = new System.Drawing.Point(138, 3);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(20, 20);
-            this.button56.TabIndex = 5;
-            this.button56.Text = "n";
-            this.button56.UseVisualStyleBackColor = true;
+            this.n_Key.Location = new System.Drawing.Point(138, 3);
+            this.n_Key.Name = "n_Key";
+            this.n_Key.Size = new System.Drawing.Size(20, 20);
+            this.n_Key.TabIndex = 5;
+            this.n_Key.Text = "n";
+            this.n_Key.UseVisualStyleBackColor = true;
+            this.n_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button55
+            // b_Key
             // 
-            this.button55.Location = new System.Drawing.Point(111, 3);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(20, 20);
-            this.button55.TabIndex = 4;
-            this.button55.Text = "b";
-            this.button55.UseVisualStyleBackColor = true;
+            this.b_Key.Location = new System.Drawing.Point(111, 3);
+            this.b_Key.Name = "b_Key";
+            this.b_Key.Size = new System.Drawing.Size(20, 20);
+            this.b_Key.TabIndex = 4;
+            this.b_Key.Text = "b";
+            this.b_Key.UseVisualStyleBackColor = true;
+            this.b_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button54
+            // v_Key
             // 
-            this.button54.Location = new System.Drawing.Point(84, 3);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(20, 20);
-            this.button54.TabIndex = 3;
-            this.button54.Text = "v";
-            this.button54.UseVisualStyleBackColor = true;
+            this.v_Key.Location = new System.Drawing.Point(84, 3);
+            this.v_Key.Name = "v_Key";
+            this.v_Key.Size = new System.Drawing.Size(20, 20);
+            this.v_Key.TabIndex = 3;
+            this.v_Key.Text = "v";
+            this.v_Key.UseVisualStyleBackColor = true;
+            this.v_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button53
+            // c_Key
             // 
-            this.button53.Location = new System.Drawing.Point(57, 3);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(20, 20);
-            this.button53.TabIndex = 2;
-            this.button53.Text = "c";
-            this.button53.UseVisualStyleBackColor = true;
+            this.c_Key.Location = new System.Drawing.Point(57, 3);
+            this.c_Key.Name = "c_Key";
+            this.c_Key.Size = new System.Drawing.Size(20, 20);
+            this.c_Key.TabIndex = 2;
+            this.c_Key.Text = "c";
+            this.c_Key.UseVisualStyleBackColor = true;
+            this.c_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button52
+            // x_Key
             // 
-            this.button52.Location = new System.Drawing.Point(30, 3);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(20, 20);
-            this.button52.TabIndex = 1;
-            this.button52.Text = "x";
-            this.button52.UseVisualStyleBackColor = true;
+            this.x_Key.Location = new System.Drawing.Point(30, 3);
+            this.x_Key.Name = "x_Key";
+            this.x_Key.Size = new System.Drawing.Size(20, 20);
+            this.x_Key.TabIndex = 1;
+            this.x_Key.Text = "x";
+            this.x_Key.UseVisualStyleBackColor = true;
+            this.x_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
-            // button51
+            // z_Key
             // 
-            this.button51.Location = new System.Drawing.Point(3, 3);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(20, 20);
-            this.button51.TabIndex = 0;
-            this.button51.Text = "z";
-            this.button51.UseVisualStyleBackColor = true;
+            this.z_Key.Location = new System.Drawing.Point(3, 3);
+            this.z_Key.Name = "z_Key";
+            this.z_Key.Size = new System.Drawing.Size(20, 20);
+            this.z_Key.TabIndex = 0;
+            this.z_Key.Text = "z";
+            this.z_Key.UseVisualStyleBackColor = true;
+            this.z_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 1;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.button58, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.space_Key, 0, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(110, 640);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
@@ -875,13 +901,15 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(139, 27);
             this.tableLayoutPanel9.TabIndex = 13;
             // 
-            // button58
+            // space_Key
             // 
-            this.button58.Location = new System.Drawing.Point(3, 3);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(133, 20);
-            this.button58.TabIndex = 0;
-            this.button58.UseVisualStyleBackColor = true;
+            this.space_Key.Location = new System.Drawing.Point(3, 3);
+            this.space_Key.Name = "space_Key";
+            this.space_Key.Size = new System.Drawing.Size(133, 20);
+            this.space_Key.TabIndex = 0;
+            this.space_Key.Text = " ";
+            this.space_Key.UseVisualStyleBackColor = true;
+            this.space_Key.Click += new System.EventHandler(this.Button_ClickLetter);
             // 
             // Form1
             // 
@@ -957,36 +985,36 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button Enter_Key;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button p_Key;
+        private System.Windows.Forms.Button o_Key;
+        private System.Windows.Forms.Button i_Key;
+        private System.Windows.Forms.Button u_Key;
+        private System.Windows.Forms.Button y_Key;
+        private System.Windows.Forms.Button t_Key;
+        private System.Windows.Forms.Button r_Key;
+        private System.Windows.Forms.Button e_Key;
+        private System.Windows.Forms.Button w_Key;
+        private System.Windows.Forms.Button q_Key;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button l_Key;
+        private System.Windows.Forms.Button k_Key;
+        private System.Windows.Forms.Button j_Key;
+        private System.Windows.Forms.Button h_Key;
+        private System.Windows.Forms.Button g_Key;
+        private System.Windows.Forms.Button f_Key;
+        private System.Windows.Forms.Button d_Key;
+        private System.Windows.Forms.Button a_Key;
+        private System.Windows.Forms.Button s_Key;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button54;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button m_Key;
+        private System.Windows.Forms.Button n_Key;
+        private System.Windows.Forms.Button b_Key;
+        private System.Windows.Forms.Button v_Key;
+        private System.Windows.Forms.Button c_Key;
+        private System.Windows.Forms.Button x_Key;
+        private System.Windows.Forms.Button z_Key;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button space_Key;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
