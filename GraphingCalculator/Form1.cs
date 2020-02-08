@@ -43,8 +43,111 @@ namespace GraphingCalculator
             //textBox1.Text = Convert.ToString(Convert.ToDouble(text[0]) + Convert.ToDouble(text[1]));
             //}
 
-            Calcualte(textBox1.Text);
+            //answer.text = Calcualte(textBox1.Text);
+            //answer.Text = RemoveBrackets(textBox1.Text);
+            textBox1.Text = RemoveBrackets(textBox1.Text);
         }
+
+        public string RemoveBrackets(string text)
+        {
+            while (text.Contains('(') && text.Contains(')'))
+            {
+                int openIndex = 0;
+                int closeIndex = 0;
+
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text[i] == '(')
+                    {
+                        openIndex = i;
+                    }
+                    if (text[i] == ')')
+                    {
+                        closeIndex = i;
+                        text = text.Remove(openIndex, closeIndex-openIndex + 1).Insert(openIndex, ResolveBrackets(openIndex, closeIndex, text));
+
+                        break;
+                    }
+                }
+
+            }
+
+
+            for(int i = 1; i < text.Length; i++)
+            {
+                if(text[i] == '-' && (text[i-1] == '*' || text[i - 1] == '/'))
+                {
+                    for (int j = i-1; j >= 0; j--)
+                    {
+                        if (text[j] == '+')
+                        {
+                            StringBuilder text1 = new StringBuilder(text);
+                            text1[j] = '-';
+                            text = text1.ToString();
+                            text = text.Remove(i, 1);
+                            break;
+                        }
+                        else if (text[j] == '-')
+                        {
+                            StringBuilder text1 = new StringBuilder(text);
+                            text1[j] = '+';
+                            text = text1.ToString();
+                            text = text.Remove(i, 1);
+                            break;
+                        }
+                    }
+                }
+            }
+
+
+            for (int i = 1; i < text.Length; i++ )
+            {
+                if (text[i] == '-' && (text[i - 1] == '-' || text[i - 1] == '*'))
+                {
+                    if(text[i - 1] == '-')
+                    {
+                        StringBuilder text1 = new StringBuilder(text);
+                        text1[i] = '+';
+                        text = text1.ToString();
+                        text = text.Remove(i-1, 1);
+                    }
+                    else
+                    {
+                        StringBuilder text1 = new StringBuilder(text);
+                        text1[i] = '-';
+                        text = text1.ToString();
+                        text = text.Remove(i - 1, 1);
+                    }
+                }
+                else if (text[i] == '+' && (text[i - 1] == '-' || text[i - 1] == '*'))
+                {
+                    if (text[i - 1] == '-')
+                    {
+                        StringBuilder text1 = new StringBuilder(text);
+                        text1[i] = '-';
+                        text = text1.ToString();
+                        text = text.Remove(i - 1, 1);
+                    }
+                    else 
+                    {
+                        StringBuilder text1 = new StringBuilder(text);
+                        text1[i] = '+';
+                        text = text1.ToString();
+                        text = text.Remove(i - 1, 1);
+                    }
+                }
+            }
+
+
+            if (text[0] == '-')
+            {
+                text = '0' + text;
+            }
+            return Calculate(text);
+        }
+
+
+
 
 
         private void Multiply_Key_Click(object sender, EventArgs e)
@@ -70,25 +173,76 @@ namespace GraphingCalculator
         }
 
 
-
-        private void Calcualte (string text)
+        public string ResolveBrackets(int openIndex, int closeIndex, string text)
         {
-            double FinalAnswer = Subtract(text);
+            string bracketAnswer = Calculate(text.Substring(openIndex + 1, closeIndex - openIndex - 1));
+            return bracketAnswer;
+        }
 
-            textBox1.Text = FinalAnswer.ToString();
+        private string Calculate (string text)
+        {
+            double FinalAnswer = AddAndSubtract(text);
+
+            return FinalAnswer.ToString();
         }
 
 
 
 
-        private double Subtract (string text1)
+        private double AddAndSubtract (string text1)
         {
             string[] text = text1.Split('-');
-
-            double total = Add(text[0]);
-            for (int i = 1; i < text.Length; i++)
+            List<string> textList = new List<string>();
+            for (int i = 0; i < text.Length; i++)
             {
-                total = total - Add(text[i]);
+                textList.Add(text[i]);
+                if (i != text.Length - 1) 
+                { 
+                    textList.Add("-");
+                }
+            }
+
+            for(int i = 0; i < textList.Count; i++)
+            {
+                if(textList[i].Contains('+') && textList[i].Length > 1)
+                {
+                    string[] textPart = textList[i].Split('+');
+
+                    textList.RemoveAt(i);
+
+                    for (int j = textPart.Length - 1; j >= 0; j--)
+                    {
+                        textList.Insert (i, (textList[j]));
+                        if (j != 0)
+                        {
+                            textList.Insert(i, "+");
+                        }
+                    }
+                }
+            }
+
+
+            double total;
+            if (textList[0].Contains('*') || textList[0].Contains('/'))
+            {
+                total = DivideAndMultiply(textList[0]);
+            }
+            else
+            {
+                total = Convert.ToDouble(textList[0]);
+            }
+            
+            for (int i = 2; i < textList.Count; i += 2)
+            {
+                if (textList [i - 1] == "-")
+                {
+                    total = total - DivideAndMultiply(textList[i]);
+                }
+                else if (textList [i - 1] == "+")
+                {
+                    total = total + DivideAndMultiply(textList[i]);
+                }
+
             }
 
             return total;
@@ -96,32 +250,66 @@ namespace GraphingCalculator
 
 
 
-        private double Add (string text1)
+
+
+
+        private double DivideAndMultiply(string text1)
         {
-            string[] text = text1.Split('+');
 
-            double total = Multiply(text[0]);
-            for(int i= 1; i < text.Length; i++)
-            {
-                total = total + Multiply(text[i]);
-            }
-
-            return total;
-
-        }
-
-
-        private double Multiply(string text1)
-        {
             string[] text = text1.Split('*');
-
-            double total = Divide(text[0]);
-            for(int i = 1;  i < text.Length; i++)
+            List<string> textList = new List<string>();
+            for (int i = 0; i < text.Length; i++)
             {
-                total = total * Divide(text[i]);
+                textList.Add(text[i]);
+                if (i != text.Length - 1)
+                {
+                    textList.Add("*");
+                }
+            }
+
+            for (int i = 0; i < textList.Count; i++)
+            {
+                if (textList[i].Contains('/') && textList[i].Length > 1)
+                {
+                    string[] textPart = textList[i].Split('/');
+
+                    textList.RemoveAt(i);
+
+                    for (int j = textPart.Length - 1; j >= 0; j--)
+                    {
+                        textList.Insert(i, (textList[j]));
+                        if (j != 0)
+                        {
+                            textList.Insert(i, "/");
+                        }
+                    }
+
+
+
+
+                }
+            }
+
+
+            double total = Convert.ToDouble(textList[0]);
+            for (int i = 2; i < textList.Count; i += 2)
+            {
+                if (textList[i - 1] == "/")
+                {
+                    total = total / Convert.ToDouble(textList[i]);
+                }
+                else if (textList[i - 1] == "*")
+                {
+                    total = total * Convert.ToDouble(textList[i]);
+                }
+
             }
 
             return total;
+
+           
+
+            //return total;
         }
 
 
